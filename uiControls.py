@@ -20,7 +20,7 @@ radio_button = driver.find_elements(By.XPATH, "//input[@type='radio']")[2]
 radio_button.click()
 assert radio_button.is_selected(), "radio button was not selected"
 
-#  display text
+# display text
 assert driver.find_element(By.XPATH, "//input[@id='displayed-text']").is_displayed()
 driver.find_element(By.XPATH, "//input[@id='hide-textbox']").click()
 assert not driver.find_element(By.XPATH, "//input[@id='displayed-text']").is_displayed()
